@@ -615,8 +615,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="paragraph">
-<p>См. <a href="#trueproduct-продукт">Product (Продукт)</a>.
-Каждая услуга предоставляется в виде стилизованного пазла. Пазлы складываются в дом, каждый пазл это "кнопка" услуги/работы (групп работ) cм. черновик <a href="#truevariant-puzzle-вариант-в-виде-пазлов">Variant "Puzzle" (Вариант в виде пазлов)</a>. Весь дизайн "пронизан" темой с пазлами. При нажатии на кнопку открывается карточка услуги/работы, где можно сделать заказ или перейти на страницу с расширенным описанием услуги. Если кратко, то на первом этапе это все, но дизайн должен решить <a href="#trueclients-pains-решаемые-боли">Clients pains (Решаемые "боли")</a> и соответствовать требованиям <a href="#General requirements (Основные требования)"">[General requirements (Основные требования)"]</a>.</p>
+<p>См. <a href="#trueproduct-продукт">Product (Продукт)</a>.</p>
+</div>
+<div class="paragraph">
+<div class="title">Сценарий (кратко)</div>
+<p>Клиент (на первых этапах это единственная роль) заходит на сайт и в первую очередь видит витрину работ/услуг в виде "домика из пазлов". Каждая услуга - стилизованный "пазл-кнопка" cм. черновик <a href="#truevariant-puzzle-вариант-в-виде-пазлов">Variant "Puzzle" (Вариант в виде пазлов)</a>. Весь дизайн "пронизан" темой с пазлами. При нажатии на кнопку-пазл открывается карточка/форма <strong>заказ</strong>а услуги/работы, где можно оформить собственно заказ или перейти на страницу с расширенным описанием услуги. В верхнем баре-меню есть возможность выполнить поиск с моментальным переходом на карточку/форму заказа услуги, а также отображается кликабельный номер телефона и возможность создания <strong>запрос</strong>а на "Обратный звонок". Если пролистать "домик", то ниже по ленте, доступен слайдер/карусель с возможностью просмотра фотографий реальных работ и еще ниже футер, для тех кто привык сразу листать в самый низ. Если кратко, то на первом этапе это все, но дизайн должен решить <a href="#trueclients-pains-решаемые-боли">Clients pains (Решаемые "боли")</a> и соответствовать требованиям <a href="#General requirements (Основные требования)"">[General requirements (Основные требования)"]</a>.
+Допускается добавление/удаление/изменение экранов/страниц на усмотрение дизайнера, выше описана просто идея, первоначальное виденье. Более подробно по страницам см. <a href="#truesite-structure-структура-сайта">Site structure  (Структура сайта)</a> и ниже (но опять же это только черновик).</p>
 </div>
 <div class="ulist">
 <div class="title">Доп. инфо</div>
@@ -1170,13 +1174,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p><strong>географическая</strong> (не реализуется на первом этапе, после реализации структура скорей всего останется простой/плоской - "<strong>putiatino</strong>.evrensel.ru/usluga") ;</p>
 </li>
-</ol>
-</div>
+<li>
+<p>Черновик структуры сайта
+.Draft (зеленым отмечены функции, линковка страниц не отображена).</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/mind.svg"><img src="images/mind.svg" alt="mind" width="500"></a>
 </div>
-<div class="title">Figure 15. Draft</div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -1216,12 +1223,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="sect4">
-<h5 id="trueсценарий"><a class="anchor" href="#trueсценарий"></a>Сценарий</h5>
-<div class="paragraph">
-<p>Пользователь заходит на главную, видит поле для поиска</p>
-</div>
-</div>
-<div class="sect4">
 <h5 id="trueфункции"><a class="anchor" href="#trueфункции"></a>Функции</h5>
 <div class="ulist">
 <ul>
@@ -1229,7 +1230,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Возможность "позвонить";</p>
 </li>
 <li>
-<p>Фильтр/Поиск услуг;</p>
+<p>Фильтр/Поиск услуг с переходом к форме заказа;</p>
 </li>
 <li>
 <p>Переход на главную;</p>
@@ -1308,6 +1309,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p>"Опишите необходимую работу" (Необязательное);</p>
+</li>
+<li>
+<p>"Прикрепить файл" (Необязательное);</p>
 <details>
 <summary class="title">Показать</summary>
 <div class="content">
@@ -1323,21 +1327,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p><span class="line-through">по значку поиска - происходит скрытие логотипа и значков звонка и поиска, за место них появляется элемент поиска. Который состоит из:</span></p>
+<p>по значку поиска - происходит скрытие логотипа и значков звонка и поиска, за место них появляется элемент поиска. Который состоит из:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p><span class="line-through">Элемента назад;</span></p>
+<p>Элемента назад;</p>
 </li>
 <li>
-<p><span class="line-through">Значка поиска;</span></p>
+<p>Значка поиска;</p>
 </li>
 <li>
-<p><span class="line-through">Элемента сбросить/очистить (крестик);</span></p>
+<p>Элемента сбросить/очистить (крестик);</p>
 </li>
 <li>
-<p><span class="line-through">Исчезающая подсказка при начале набора текста;
-При начале ввода (примерно 4 символов) появляется список найденных услуг по клику происходит переход на страницу с описанием услуги;</span></p>
+<p>Исчезающая подсказка при начале набора текста;
+При начале ввода (примерно 4 символов) появляется список найденных услуг по клику происходит переход на страницу с описанием услуги;</p>
 <details>
 <summary class="title">Показать</summary>
 <div class="content">
@@ -1363,7 +1367,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ol>
 </div>
 <div class="paragraph">
-<p>Если открыта карточка услуги (или открыт поиск/фильтр), то есть возможность вернуться обратно, сбросить фильтр.</p>
+<p>Если открыта карточка услуги (или открыт поиск/фильтр), то есть возможность вернуться обратно, сбросить фильтр/значение поиска.</p>
 </div>
 <details>
 <summary class="title">Показать</summary>
@@ -1386,6 +1390,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p>Возможность "позвонить";</p>
 </li>
+<li>
+<p>Вернуться к списку услуг/работ;</p>
+</li>
 </ul>
 </div>
 </div>
@@ -1398,13 +1405,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="images/show_hide_menu.gif" alt="search list">
 </div>
-<div class="title">Figure 16. На gif показ/скрытие верхнее меню</div>
+<div class="title">Figure 15. На gif показ/скрытие верхнее меню</div>
 </div>
 </div>
 <div class="sect4">
 <h5 id="trueсостав-2"><a class="anchor" href="#trueсостав-2"></a>Состав</h5>
 <div class="paragraph">
-<p>Меню содержит единственную кнопку со значком "позвонить".</p>
+<p>Меню содержит 2 кнопки/значки "позвонить", "К списку работ".</p>
 </div>
 </div>
 <div class="sect4">
@@ -1413,12 +1420,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Логику скрытия/показа "меню" смотри в примере выше.</p>
 </div>
 <div class="paragraph">
-<p>При клике:</p>
+<p>При клике по "кнопке":</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>по "кнопке" открывается телефонная книга на мобильном устройстве с введённым номером телефона;</p>
+<p>позвонить открывается телефонная книга на мобильном устройстве с введённым номером телефона;</p>
 <details>
 <summary class="title">Показать</summary>
 <div class="content">
@@ -1429,6 +1436,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </details>
+</li>
+<li>
+<p>"К списку работ" переход на главную;</p>
 </li>
 </ul>
 </div>
@@ -1459,13 +1469,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/futer1.png"><img src="images/futer1.png" alt="futer" width="500"></a>
 </div>
-<div class="title">Figure 17. Общий пример "полоса" + "районы присутствия"</div>
+<div class="title">Figure 16. Общий пример "полоса" + "районы присутствия"</div>
 </div>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/footer_ex1.png"><img src="images/footer_ex1.png" alt="futer" width="500"></a>
 </div>
-<div class="title">Figure 18. Пример "полосы" футера</div>
+<div class="title">Figure 17. Пример "полосы" футера</div>
 </div>
 </div>
 <div class="sect4">
@@ -1806,14 +1816,40 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect4">
 <h5 id="trueсостав-5"><a class="anchor" href="#trueсостав-5"></a>Состав</h5>
-
-</div>
-<div class="sect4">
-<h5 id="trueлогика-5"><a class="anchor" href="#trueлогика-5"></a>Логика</h5>
 <div class="paragraph">
-<p>При клике по плитке/пазлу, плитка увеличивается в размере, сверху и снизу подтягиваются связанные плитки услуг.<br>
-На плитке (верх), присутствует небольшое изображение/фото работы/услуги с "биркой-ценой от &#8230;&#8203;. и сроком от&#8230;&#8203;.". В центре краткое описание услуги (чуть больше чем на исходной плитке). Внизу две или одна "плоские" кнопки:</p>
+<p>На форме/карточке заказа должно присутствовать:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>элемент назад;</p>
+</li>
+<li>
+<p>небольшое изображение/фото работы/услуги;</p>
+</li>
+<li>
+<p>"бирка с ценой от";</p>
+</li>
+<li>
+<p>"срок от";</p>
+</li>
+<li>
+<p>краткое описание услуги;</p>
+</li>
+<li>
+<p>Номер телефона (Обязательно);</p>
+</li>
+<li>
+<p>"Ваше имя" (Обязательное);</p>
+</li>
+<li>
+<p>"Опишите необходимую работу" (Необязательное);</p>
+</li>
+<li>
+<p>"Прикрепить файл" (Необязательное);</p>
+</li>
+<li>
+<p>Внизу две? или одна "плоские кнопки":</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1824,16 +1860,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>На первом этапе все максимально упрощено (в дальнейшем будет заменяться на калькулятор по каждой услуге).</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="trueлогика-5"><a class="anchor" href="#trueлогика-5"></a>Логика</h5>
+<div class="paragraph">
+<p><span class="line-through">При клике по плитке/пазлу, плитка увеличивается в размере, сверху и снизу подтягиваются связанные плитки услуг.</span><br></p>
+</div>
 <div class="paragraph">
 <p>Нажатие на:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>"Подробнее &gt;&gt;" ведет на страницу с подробным описанием услуги/работы;</p>
+<p>"Подробнее &gt;&gt;" ведёт на страницу с подробным описанием услуги/работы;</p>
 </li>
 <li>
-<p>"Заказать" инициирует показ модалки/калькулятора заказа;</p>
+<p>"Заказать" - отправка заказа на Back;</p>
 </li>
 </ul>
 </div>
@@ -1853,13 +1901,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/g_slider.png"><img src="images/g_slider.png" alt="slider" width="500"></a>
 </div>
-<div class="title">Figure 19. Пример горизонтального слайдера (ikea)</div>
+<div class="title">Figure 18. Пример горизонтального слайдера (ikea)</div>
 </div>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/g_slider2.png"><img src="images/g_slider2.png" alt="slider" width="500"></a>
 </div>
-<div class="title">Figure 20. Пример горизонтального слайдера (myspace)</div>
+<div class="title">Figure 19. Пример горизонтального слайдера (myspace)</div>
 </div>
 </div>
 <div class="sect4">
@@ -1889,7 +1937,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/leave_request.png"><img src="images/leave_request.png" alt="lleave_request" width="500"></a>
 </div>
-<div class="title">Figure 21. Пример формы оставить заявку</div>
+<div class="title">Figure 20. Пример формы оставить заявку</div>
 </div>
 </div>
 <div class="sect4">
@@ -1949,9 +1997,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul>
 <li>
 <p>переход на калькулятор (мастер для формирования заказа, в том числе чтобы узнать реальную цену);</p>
-</li>
-<li>
-<p>страницу с описанием услуги</p>
 </li>
 </ul>
 </div>
@@ -2267,7 +2312,7 @@ https://www.vedomosti.ru/technology/articles/2020/01/12/820396-prodano-30-smartf
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-15 04:38:54 +0300
+Last updated 2021-03-15 05:50:11 +0300
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
