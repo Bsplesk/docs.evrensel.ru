@@ -445,15 +445,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#trueproduct-продукт">Product (Продукт)</a></li>
 <li><a href="#truegoals-цели">Goals (Цели)</a></li>
 <li><a href="#truetarget-audience-целевая-аудитория">Target audience (Целевая аудитория)</a></li>
-<li><a href="#trueexamples-примеры">Examples (Примеры)</a></li>
 <li><a href="#truedesign-дизайн">Design (Дизайн)</a>
 <ul class="sectlevel2">
-<li><a href="#truesummary-кратко">Summary (Кратко)</a></li>
+<li><a href="#trueidea-идея">Idea (Идея)</a></li>
 <li><a href="#trueclients-pains-решаемые-боли">Clients pains (Решаемые "боли")</a></li>
 <li><a href="#truegeneral-requirements-основные-требования">General requirements (Основные требования)</a></li>
 <li><a href="#truecolor-цвета">Color (Цвета)</a></li>
 <li><a href="#truelogo-логотип">Logo (Логотип)</a></li>
 <li><a href="#truepers-персонаж">Pers (Персонаж)</a></li>
+<li><a href="#trueexamples-примеры">Examples (Примеры)</a></li>
 <li><a href="#truepre-wireframe-предварительный-макеты">Pre-wireframe (Предварительный макеты)</a>
 <ul class="sectlevel3">
 <li><a href="#truevariant-icons-вариант-в-виде-иконок">Variant "Icons" (Вариант в виде иконок)</a></li>
@@ -468,14 +468,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#truereused-parts-переиспользуемые-части">Reused parts (Переиспользуемые части)</a>
 <ul class="sectlevel3">
-<li><a href="#truetop-search-bar-шапка">Top Search Bar ("Шапка")</a></li>
+<li><a href="#truetop-bar-шапка">Top Bar ("Шапка")</a></li>
 <li><a href="#truetab-bar-bottom-navigation-menu">Tab bar (Bottom navigation menu)</a></li>
 <li><a href="#truefooter-подвал">Footer (Подвал)</a></li>
 </ul>
 </li>
 <li><a href="#truehome-page-главная">Home Page (Главная)</a>
 <ul class="sectlevel3">
-<li><a href="#truetop-search-bar-шапка-2">Top Search Bar ("Шапка")</a></li>
+<li><a href="#truetop-search-bar-шапка">Top Search Bar ("Шапка")</a></li>
 <li><a href="#truelist-of-works-перечень-работуслуг">List of works (Перечень работ/услуг)</a></li>
 <li><a href="#trueorder-form-форма-заказакарточка-услуги">Order Form (Форма заказа/Карточка услуги)</a></li>
 <li><a href="#trueour-works-наши-работы">Our works  (Наши работы)</a></li>
@@ -515,7 +515,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="trueproduct-продукт"><a class="anchor" href="#trueproduct-продукт"></a>Product (Продукт)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Лёгкий, быстрый статичный сайт (но с динамикой на клиенте/js, фактически SPA приложение) - акцент <strong>не</strong> на лицо/визитку компании и вообще компанию, а на предлагаемые услуги. Позволяет клиенту ознакомиться с услугами компании и заказать услугу (при помощи звонка). Ключевое - продажа не товаров, а услуг.<br>
+<p>Лёгкий, быстрый статичный сайт/SPA-приложение (с динамикой и бизнес логикой на клиенте/js) - акцент <strong>не</strong> на лицо/визитку компании и вообще компанию, а на предлагаемые услуги. Позволяет клиенту ознакомиться с услугами компании и сделать заказ услуги при помощи звонка или мастера. Ключевое - продажа не товаров, а услуг.<br>
 В дальнейшем есть планы роста в «магазин/<strong>супермаркет строительных услуг</strong>». Фактически будет добавлена возможность оплаты, а вместе с ней полноценный BackEnd и естественно переработан весь FrontEnd, но с дизайном нужно попасть сразу и сильно его не менять.</p>
 </div>
 <div class="quoteblock">
@@ -548,7 +548,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="truegoals-цели"><a class="anchor" href="#truegoals-цели"></a>Goals (Цели)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Сайт должен:</p>
+<p>Сайт/Приложение должен:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -556,16 +556,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>объяснить клиенту, что услугу заказать выгодней чем делать самим или искать самим работников (основной акцент <strong>экономия времени</strong>, получение <strong>качественной</strong> работы).</p>
 </li>
 <li>
-<p>мотивировать клиента совершить звонок/получить консультацию (это не должно быть чересчур навязчиво -никаких всплывающих модалок);</p>
+<p>мотивировать клиента сформировать заказ, совершить звонок/получить консультацию (это не должно быть чересчур навязчиво - никаких всплывающих модалок);</p>
 </li>
 <li>
-<p>предоставлять каталог услуг (выполняемых работ);</p>
+<p>предоставить витрину услуг/работ;</p>
+</li>
+<li>
+<p>предоставить карточку услуги/работы со встроенным калькулятором заказа (на первом этапе просто описание);</p>
 </li>
 <li>
 <p>галерию работ (реальных);</p>
 </li>
 <li>
-<p>страницу с описанием каждой услуги/в дальнейшем калькулятор заказа;</p>
+<p>страницу с подробным описанием каждой услуги;</p>
 </li>
 <li>
 <p>краткую информацию о компании;</p>
@@ -595,221 +598,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="trueexamples-примеры"><a class="anchor" href="#trueexamples-примеры"></a>Examples (Примеры)</h2>
-<div class="sectionbody">
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Стоит отметить, что обязательно стоит зайти на сайты с мобильного устройства (или прикинуться им). Не всегда достаточно изменить размер окна браузера. Это нежелательное поведение - данный сайт должен быть адаптивным и изменяться только на основе изменения размера окна (не должен учитывается user agent и.т.д.).<br>
-</td>
-</tr>
-</table>
-</div>
-<details>
-<summary class="title">Показать</summary>
-<div class="content">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 70%;">
-<col style="width: 10%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">URL</th>
-<th class="tableblock halign-left valign-top">Описание</th>
-<th class="tableblock halign-left valign-top">Оценка*</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.taylormorrison.com" class="bare">https://www.taylormorrison.com</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>На мой взгляд отлично продуманный, серьёзный, мультирегиональный, адаптивный сайт с нейтральной цветовой схемой. Все по делу — минимум лишнего, при этом контекст бьёт в точку по целевой аудитории (ЦА схожа с нашей, чуть моложе лет на 5-10), то к чему нужно стремиться. Клиент зашёл на сайт и на первой экранной форме, сразу "SELECT A STATE, SELECT BEDROOMS, SELECT PRICE". Есть, конечно, продвижение "VIRTUAL TOURS" объектов уж очень им хочется показать, что у них есть такая "фишка" - ну так скажем вполне умеренно (возможно сейчас это очень актуально, а возможно хорошо экономит время сотрудников показывающих жильё, задача отсеивать "пустые" просмотры).</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/taylormorrison.png"><img src="images/taylormorrison.png" alt="Example" width="300"></a>
-</div>
-</div>
-<div class="paragraph">
-<p>Мультирегиональность реализована с использованием "каталогов", а не "поддоменов" (см. их <a href="https://www.taylormorrison.com/sitemaps/sitemap-taylormorrison-en.xml">sitemap.xml</a>). Для разрабатываемого сайта тоже потребуется поддержка - только не мультирегиональности, а разбивка по городам одного региона без разбивки на районы, кварталы. Пример:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>www.taylormorrison.com/<strong>co</strong>/<strong>denver</strong>/<strong>brighton</strong></p>
-</li>
-<li>
-<p>www.taylormorrison.com/co/denver/broomfield</p>
-</li>
-<li>
-<p>www.taylormorrison.com/co/denver/castle-pines</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>В нашем случае будет только:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>evrensel.ru/<strong>putiatino</strong>/usluga</p>
-</li>
-<li>
-<p>evrensel.ru/riazhsk/usluga.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Или поддомены (так проще настраивать yandex, но не google который их не любит). Пример:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>putiatino</strong>.evrensel.ru/usluga</p>
-</li>
-<li>
-<p>riazhsk.evrensel.ru/usluga</p>
-<div class="paragraph">
-<p>С точки зрения дизайна нужно обратить внимание как сделано на главной (ниже "подвала" и только на главной).</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/region.png"><img src="images/region.png" alt="Example logo"></a>
-</div>
-</div>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.quantumart.ru" class="bare">http://www.quantumart.ru</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Понравился минималистический дизайн - весь sitemap из 4 ссылок - <a href="http://www.quantumart.ru/sitemap.xml">sitemap.xml</a>,</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/quantart.png"><img src="images/quantart.png" alt="Example" width="300"></a>
-</div>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/quantart2.png"><img src="images/quantart2.png" alt="Example" width="300"></a>
-</div>
-</div>
-<div class="paragraph">
-<p>региональность сделана при помощи карт, без "каталогов", "поддоменов" т.к. у них всего 2 региона и усложнение лишнее. Но тут именно лендинг/визитка, а у нас немного другое позиционирование - это в первую очередь услуги, а о компании это где-то там внизу, в подвале.</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/region_maps.png"><img src="images/region_maps.png" alt="Example" width="300"></a>
-</div>
-</div>
-<div class="paragraph">
-<p>На этом все хорошее закончилось и пошли минусы - отсутствует адаптивность, отсутствует https, как результат tele2 тутже впихнул (inject java-script virus) свою рекламу <a href="http://p.tlrtb.com/ad/base.js" class="bare">http://p.tlrtb.com/ad/base.js</a>.</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/without_https.png"><img src="images/without_https.png" alt="Example" width="300"></a>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Сойдет</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>m.</strong>rewedo.ru</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Главная довольно интересно и почти аккуратно сделана (в мобильной версии, как по мне слишком много текста, слишком длинная портянка).</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/m.rewedo.ru.png"><img src="images/m.rewedo.ru.png" alt="Example" width="300"></a>
-</div>
-</div>
-<div class="paragraph">
-<p>"Почти" - дубляж телефонов, перекрытый фон "лица" полями ввода и другие мелочи &#8230;&#8203; но в целом все не плохо.</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/revedo_bad.png"><img src="images/revedo_bad.png" alt="Example"></a>
-</div>
-</div>
-<div class="paragraph">
-<p>Цветовая схема вполне приемлемая. Минус, что отдельная мобильная версия (отдельный поддомен m), redject на который происходит по user agent (поддомен это фактически отдельный сайт). Хостятся они кстати на Amazon при запросе sitemap.xml получаем "кривой" redirect на <a href="https://rewedo-v3-2.s3-us-west-2.amazonaws.com/sitemap.xml" class="bare">https://rewedo-v3-2.s3-us-west-2.amazonaws.com/sitemap.xml</a></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Норм</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://profi.ru" class="bare">https://profi.ru</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Отлично, что сразу после выбора услуги пользователь перенаправляется на страницу заказа. См. пример решаемой боли клиента <a href="#trueservices-page-страница-с-описанием-услугиработы-или-страница-заказа">Services Page (Страница с описанием услуги/работы или страница заказа)</a></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.banki.ru" class="bare">https://www.banki.ru</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Сайт/портал огромный (Финансовый супермаркет), при этом на главной странице все по делу. Мобильная главная, первый экран прям отлично. Отлично выделены основные направления/услуги. Не нужно никуда листать - всё на первом экране. Самые маржинальные/популярные услуги выделены.</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/tile.png"><img src="images/tile.png" alt="Example" width="300"></a>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Норм</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.ikea.com/us/en" class="bare">https://www.ikea.com/us/en</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>На мой взгляд хорошо продуманный адаптивный сайт с нейтральной цветовой схемой.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://данилин-мастер.рф" class="bare">https://данилин-мастер.рф</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Тема из «детского мультика», отсутствует адаптив. В «шапку» сайта запихнули слишком много (региональность + краткий список работ). С другой стороны с наполнением контекста все хорошо +  подумали над региональностью.</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/region2.png"><img src="images/region2.png" alt="Example" width="300"></a>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Сойдет</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://nsk178.ru/nashi-uslugi" class="bare">https://nsk178.ru/nashi-uslugi</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Полнейшая типичная «халтура» во всем. Ни нормальной группировки услуг (в меню одно, в ленте сайта другое), мешанина, ни нормальной «подборки цветов» - толи бар, толи строительные услуги, «кривая» вёрстка. Сайт вызывает впечатление «Шараж-монтаж».</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Дёрьмо</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://gabecagara.com" class="bare">https://gabecagara.com</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Интересный скролл/анимация, легкий дизайн</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>*<em>(Отлично, Норм, Сойдет, Дёрьмо)</em></p>
-</div>
-</div>
-</details>
-</div>
-</div>
-<div class="sect1">
 <h2 id="truedesign-дизайн"><a class="anchor" href="#truedesign-дизайн"></a>Design (Дизайн)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="truesummary-кратко"><a class="anchor" href="#truesummary-кратко"></a>Summary (Кратко)</h3>
+<h3 id="trueidea-идея"><a class="anchor" href="#trueidea-идея"></a>Idea (Идея)</h3>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -823,19 +615,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="paragraph">
-<p>Mobile first</p>
+<p>См. <a href="#trueproduct-продукт">Product (Продукт)</a>.
+Каждая услуга предоставляется в виде стилизованного пазла. Пазлы складываются в дом, каждый пазл это "кнопка" услуги/работы (групп работ) cм. черновик <a href="#truevariant-puzzle-вариант-в-виде-пазлов">Variant "Puzzle" (Вариант в виде пазлов)</a>. Весь дизайн "пронизан" темой с пазлами. При нажатии на кнопку открывается карточка услуги/работы, где можно сделать заказ или перейти на страницу с расширенным описанием услуги. Если кратко, то на первом этапе это все, но дизайн должен решить <a href="#trueclients-pains-решаемые-боли">Clients pains (Решаемые "боли")</a> и соответствовать требованиям <a href="#General requirements (Основные требования)"">[General requirements (Основные требования)"]</a>.</p>
 </div>
+<div class="ulist">
+<div class="title">Доп. инфо</div>
+<ul>
+<li>
+<p>Mobile first</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/mobile_first.png"><img src="images/mobile_first.png" alt="Example" width="300"></a>
 </div>
 </div>
-<div class="paragraph">
-<p>Нужно перевернуть мозги и думать в основном о мобильной версии (причем как о приложении SPA) и совсем немного о версии для персональных компьютеров. Не нужно представлять сразу как это будет выглядеть на PC, что скрыть в мобильной версии, а наоборот, что потом добавим в версии для PC. При разработке опираться нужно в первую очередь на требования (по факту это будет один адаптивный макет).</p>
+</li>
+<li>
+<p>SPA</p>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/spa.png"><img src="images/spa.png" alt="Example" width="300"></a>
+</div>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<div class="title">Идея.</div>
-<p>С точки зрения оформления даётся почти полная свобода за исключением пожелания предоставления каждой услуги в виде стилизованного пазла (частички одного большого проекта - дома), сам дом состоит из пазлов предоставляя полную картину (это только пожелание, его можно игнорировать).</p>
+<p>Нужно перевернуть мозги и думать в основном о мобильной версии причём как <strong>о приложении</strong>/SPA и совсем немного о версии для персональных компьютеров. Не нужно представлять сразу как это будет выглядеть на PC, что скрыть в мобильной версии, а наоборот, что потом добавить в версию для PC.<br>
+При разработке дизайна опираться нужно в первую очередь на <strong>требования</strong> и постоянно думать над решением клиентских <strong>болей</strong>. В результате должен получиться один адаптивный макет.
+С точки зрения оформления даётся почти полная свобода.</p>
 </div>
 </div>
 <div class="sect2">
@@ -928,13 +735,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Снимать планируемую, очевидную нагрузку с "мозга", затраты на обдумывание решения, выбор материалов, контроль качества. Ненавязчиво объяснять, что в случае заказа готовой услуги, клиент решает сразу кучу возможных проблем. Для этого везде должен быть подтекст, что строительство собственными силами, найм строительной бригады и.т.д. - огромный геморрой связанный с рисками (мозг должен это понять и начать сопротивляться строительству собственными силами). В "красках" это должно содержаться на страницах с описанием услуги, но и на главной (в том числе мобильной версии) это должно присутствовать;</p>
 </li>
 <li>
-<p>Показать "ценник", стоимость услуги с возможностью уточнения. На страницах с описанием услуг планируется калькулятор и в зависимости от услуги приложить свой файл с уточнением, что нужно. На главной для каждой услуги нужно что-то типа бирки с ценой "от &#8230;&#8203;" . Допустим при заказе окон, у клиента есть размеры ему нужно узнать цену сразу или по звонку. Чисто звонок тут работает плохо, не видя стоимости (хотябы примерной - от) клиент просто уходит, он не хочет тратить своё время на звонок не поняв устраивает ли его стоимость. Если же он увидел и/или рассчитал стоимость сам (калькулятор) или приложил файл и уже получает звонок с предварительно рассчитанной стоимостью (можно сказать персональным предложением, т.к. нам понятен объём и.т.д.) - это хорошо мы сэкономили его время. Маркетинговые вещи из разряда сказали 5 тыр, а в реальности 15 или "тупо позвоните" работают сугубо отрицательно на репутацию);</p>
+<p>Показать "ценник", стоимость услуги с возможностью уточнения. На страницах с описанием услуг и карточке товара планируется калькулятор с возможностью приложить свой файл с уточнением, что нужно. На главной для каждой услуги нужно что-то типа бирки с ценой "от &#8230;&#8203;" . Допустим при заказе окон, у клиента есть размеры ему нужно узнать цену сразу или по звонку. Чисто звонок тут работает плохо, не видя стоимости (хотябы примерной - от) клиент просто уходит, он не хочет тратить своё время на звонок не поняв устраивает ли его стоимость. Если же он увидел и/или рассчитал стоимость сам (калькулятор) или приложил файл и уже получает звонок с предварительно рассчитанной стоимостью нескольких вариантов (можно сказать персональным предложением, т.к. нам понятен объём и.т.д.) - это хорошо мы сэкономили его время. Маркетинговые вещи из разряда сказали 5 тыр, а в реальности 15 или "тупо позвоните" работают сугубо отрицательно на репутацию);</p>
 </li>
 <li>
 <p>Ненавязчиво убедить, успокоить клиента, что он работает напрямую с исполнителями (это не только текст, а должно быть сразу понятно с главной);</p>
 </li>
 <li>
-<p>Предоставлять возможность приоритизации услуг - это требование в основном к главной (см. пример с banki.ru);</p>
+<p>Предоставлять возможность приоритизации услуг - это требование в основном к главной (см. <a href="#trueexamples-примеры">Examples (Примеры)</a> пример с banki.ru);</p>
 </li>
 </ul>
 </div>
@@ -945,8 +752,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="truecolor-цвета"><a class="anchor" href="#truecolor-цвета"></a>Color (Цвета)</h3>
 <div class="paragraph">
-<p>На усмотрение дизайнера. Цвета не должны быть яркими, вызывающими, «ночными». Сайт должен стремиться к умеренной строгости, аккуратности — совместить «чертёж по ГОСТу» c уютом и спокойствием дачного домика (не совсем "мультяшный", но и не супер). Преобладание бело-гаммы и цветов связанных с логотипом. Цвета не должны быть основным и выделяться, а только подчёркивать общий стиль/элементы сайта.
-См. Примеры удачных и не удачных сайтов и "brand book".</p>
+<p>На усмотрение дизайнера. Цвета не должны быть яркими, вызывающими, «ночными». Сайт должен стремиться к умеренной строгости, аккуратности — совместить «чертёж по ГОСТу» c уютом и спокойствием дачного домика (не совсем "мультяшный", но и не супер строгим). Преобладание бело-гаммы. Цвета не должны быть основным и выделяться, а только подчёркивать общий стиль/элементы сайта.</p>
 </div>
 </div>
 <div class="sect2">
@@ -963,6 +769,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="truepers-персонаж"><a class="anchor" href="#truepers-персонаж"></a>Pers (Персонаж)</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Если дизайнер видит, что необходим для отображения той или иной ситуации, то об этом нужно сказать. Примеры предоставлены информационно.
+</td>
+</tr>
+</table>
+</div>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/ants.svg"><img src="images/ants.svg" alt="Example logo" width="500"></a>
@@ -975,6 +793,234 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="title">Figure 4. Без посредников (получилось не очень, но что есть)</div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="trueexamples-примеры"><a class="anchor" href="#trueexamples-примеры"></a>Examples (Примеры)</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Стоит отметить, что обязательно стоит зайти на сайты с мобильного устройства (или прикинуться им). Не всегда достаточно изменить размер окна браузера. Это нежелательное поведение - данный сайт должен быть адаптивным и изменяться только на основе изменения размера окна (не должен учитывается user agent и.т.д.).<br>
+</td>
+</tr>
+</table>
+</div>
+<details>
+<summary class="title">Показать</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 70%;">
+<col style="width: 10%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">URL</th>
+<th class="tableblock halign-left valign-top">Описание</th>
+<th class="tableblock halign-left valign-top">Оценка*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.taylormorrison.com" class="bare">https://www.taylormorrison.com</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>На мой взгляд отлично продуманный, серьёзный, мультирегиональный, адаптивный сайт с нейтральной цветовой схемой. Все по делу — минимум лишнего, при этом контекст бьёт в точку по целевой аудитории (ЦА схожа с нашей, чуть моложе лет на 5-10), то к чему нужно стремиться. Клиент зашёл на сайт и на первой экранной форме, сразу "SELECT A STATE, SELECT BEDROOMS, SELECT PRICE". Есть, конечно, продвижение "VIRTUAL TOURS" объектов уж очень им хочется показать, что у них есть такая "фишка" - ну так скажем вполне умеренно (возможно сейчас это очень актуально, а возможно хорошо экономит время сотрудников показывающих жильё, задача отсеивать "пустые" просмотры).</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/taylormorrison.png"><img src="images/taylormorrison.png" alt="Example" width="300"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Мультирегиональность реализована с использованием "каталогов", а не "поддоменов" (см. их <a href="https://www.taylormorrison.com/sitemaps/sitemap-taylormorrison-en.xml">sitemap.xml</a>). Для разрабатываемого сайта тоже потребуется поддержка - только не мультирегиональности, а разбивка по городам одного региона без разбивки на районы, кварталы. Пример:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>www.taylormorrison.com/<strong>co</strong>/<strong>denver</strong>/<strong>brighton</strong></p>
+</li>
+<li>
+<p>www.taylormorrison.com/co/denver/broomfield</p>
+</li>
+<li>
+<p>www.taylormorrison.com/co/denver/castle-pines</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>В нашем случае будет только:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>evrensel.ru/<strong>putiatino</strong>/usluga</p>
+</li>
+<li>
+<p>evrensel.ru/riazhsk/usluga.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Или поддомены (так проще настраивать yandex, но не google который их не любит). Пример:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>putiatino</strong>.evrensel.ru/usluga</p>
+</li>
+<li>
+<p>riazhsk.evrensel.ru/usluga</p>
+<div class="paragraph">
+<p>С точки зрения дизайна нужно обратить внимание как сделано на главной (ниже "подвала" и только на главной).</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/region.png"><img src="images/region.png" alt="Example logo"></a>
+</div>
+</div>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">www.airbnb.com</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Пример SPA приложения для понимания навигации</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/airbnb.png"><img src="images/airbnb.png" alt="airbnb" width="300"></a>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.quantumart.ru" class="bare">http://www.quantumart.ru</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Понравился минималистический дизайн - весь sitemap из 4 ссылок - <a href="http://www.quantumart.ru/sitemap.xml">sitemap.xml</a>,</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/quantart.png"><img src="images/quantart.png" alt="Example" width="300"></a>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/quantart2.png"><img src="images/quantart2.png" alt="Example" width="300"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>региональность сделана при помощи карт, без "каталогов", "поддоменов" т.к. у них всего 2 региона и усложнение лишнее. Но тут именно лендинг/визитка, а у нас немного другое позиционирование - это в первую очередь услуги, а о компании это где-то там внизу, в подвале.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/region_maps.png"><img src="images/region_maps.png" alt="Example" width="300"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>На этом все хорошее закончилось и пошли минусы - отсутствует адаптивность, отсутствует https, как результат tele2 тутже впихнул (inject java-script virus) свою рекламу <a href="http://p.tlrtb.com/ad/base.js" class="bare">http://p.tlrtb.com/ad/base.js</a>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/without_https.png"><img src="images/without_https.png" alt="Example" width="300"></a>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Сойдет</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>m.</strong>rewedo.ru</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Главная довольно интересно и почти аккуратно сделана (в мобильной версии, как по мне слишком много текста, слишком длинная портянка), но  это и не SPA.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/m.rewedo.ru.png"><img src="images/m.rewedo.ru.png" alt="Example" width="300"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>"Почти" - дубляж телефонов, перекрытый фон "лица" полями ввода и другие мелочи &#8230;&#8203; но в целом все не плохо.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/revedo_bad.png"><img src="images/revedo_bad.png" alt="Example"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Цветовая схема вполне приемлемая. Минус, что отдельная мобильная версия (отдельный поддомен m), redject на который происходит по user agent (поддомен это фактически отдельный сайт). Хостятся они кстати на Amazon при запросе sitemap.xml получаем "кривой" redirect на <a href="https://rewedo-v3-2.s3-us-west-2.amazonaws.com/sitemap.xml" class="bare">https://rewedo-v3-2.s3-us-west-2.amazonaws.com/sitemap.xml</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Норм</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://profi.ru" class="bare">https://profi.ru</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Отлично, что сразу после выбора услуги пользователь перенаправляется на страницу (мастер/Wizard) заказа.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.banki.ru" class="bare">https://www.banki.ru</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Сайт/портал огромный (Финансовый супермаркет), при этом на главной странице все по делу. Мобильная главная, первый экран прям отлично. Отлично выделены основные направления/услуги. Не нужно никуда листать - всё на первом экране. Самые маржинальные/популярные услуги выделены.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/tile.png"><img src="images/tile.png" alt="Example" width="300"></a>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Норм</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.ikea.com/us/en" class="bare">https://www.ikea.com/us/en</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Хорошо продуманный адаптивный сайт с нейтральной цветовой схемой.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://данилин-мастер.рф" class="bare">https://данилин-мастер.рф</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Тема из «детского мультика», отсутствует адаптив. В «шапку» сайта запихнули слишком много (региональность + краткий список работ). С другой стороны с наполнением контекста все хорошо +  подумали над региональностью.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/region2.png"><img src="images/region2.png" alt="Example" width="300"></a>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Сойдет</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://nsk178.ru/nashi-uslugi" class="bare">https://nsk178.ru/nashi-uslugi</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Полнейшая типичная «халтура» во всем. Ни нормальной группировки услуг (в меню одно, в ленте сайта другое), мешанина, ни нормальной «подборки цветов» - толи бар, толи строительные услуги, «кривая» вёрстка. Сайт вызывает впечатление «Шараж-монтаж».</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Дёрьмо</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://gabecagara.com" class="bare">https://gabecagara.com</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Интересный скролл/анимация, лёгкий дизайн</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отлично</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://all-zabor.ru" class="bare">https://all-zabor.ru</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Классический сайт посредник с региональным разбиением (сайт в Default City и куча страниц на все регионы для индексации). Понравилась картинка "домика" на главной, бьёт по ЦА. Присутствует цена "от", фото "товара/работы"</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Сойдет01</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>*<em>(Отлично, Норм, Сойдет, Дёрьмо)</em></p>
+</div>
+</div>
+</details>
 </div>
 <div class="sect2">
 <h3 id="truepre-wireframe-предварительный-макеты"><a class="anchor" href="#truepre-wireframe-предварительный-макеты"></a>Pre-wireframe (Предварительный макеты)</h3>
@@ -1026,10 +1072,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="title">Недостатки:</div>
 <ul>
 <li>
-<p>Не выделены решаемые боли "Клиентов" (на первом экране). Планируется, что все это будет на карточке товара (или ниже по ленте);<br></p>
+<p>Не выделены решаемые боли "Клиентов" (на первом экране). Планируется, что все это будет на карточке товара (или ниже по ленте, сама лента минимальная т.к. это SPA приложение, по хорошему должен быть вообще один основной/первый экран, а уже далее мастер с переходом к другим);<br></p>
 </li>
 <li>
-<p>Отсутствует гибкая приоритизация маржинальных услуг, сейчас она "захардкожена", есть воможность поменять местами часть пазлов внутри дома, сменить цвет, добавить анимацию). Возможно получится добавить бирку с ценой, + в пазле еще должен быть значок услуги;</p>
+<p>Отсутствует гибкая приоритизация маржинальных услуг, сейчас она "захардкожена", есть воможность поменять местами часть пазлов внутри дома, сменить цвет, добавить анимацию). Возможно получится добавить бирку с ценой;</p>
 </li>
 <li>
 <p>+ Что дизайн "веселый" и "оригинальный";</p>
@@ -1054,7 +1100,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/puzzle_house_witch_icons.jpg"><img src="images/puzzle_house_witch_icons.jpg" alt="Черновой вариант" width="500"></a>
+<a class="image" href="images/puzzle_house_witch_icons.jpg"><img src="images/puzzle_house_witch_icons.jpg" alt="Черновой вариант с иконками" width="500"></a>
 </div>
 <div class="title">Figure 10. Черновой вариант</div>
 </div>
@@ -1126,6 +1172,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ol>
 </div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/mind.svg"><img src="images/mind.svg" alt="mind" width="500"></a>
+</div>
+<div class="title">Figure 15. Draft</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1148,7 +1200,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="sect3">
-<h4 id="truetop-search-bar-шапка"><a class="anchor" href="#truetop-search-bar-шапка"></a>Top Search Bar ("Шапка")</h4>
+<h4 id="truetop-bar-шапка"><a class="anchor" href="#truetop-bar-шапка"></a>Top Bar ("Шапка")</h4>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1157,21 +1209,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Меню (Меню-гамбургер) в мобильной версии не реализуется - просто "Bar" <span class="line-through">с фильтром и возможностью позвонить. На макете нужно дополнительно отрисовать установку и сброс фильтра.</span></p>
+<p>Меню (Меню-гамбургер) в мобильной версии не реализуется - просто "Bar" с поиском/фильтром и возможностью позвонить. На макете нужно дополнительно отрисовать установку и сброс фильтра (фактически это затрагивает навигацию).</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="sect4">
-<h5 id="trueфункциональность"><a class="anchor" href="#trueфункциональность"></a>Функциональность</h5>
+<h5 id="trueсценарий"><a class="anchor" href="#trueсценарий"></a>Сценарий</h5>
+<div class="paragraph">
+<p>Пользователь заходит на главную, видит поле для поиска</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="trueфункции"><a class="anchor" href="#trueфункции"></a>Функции</h5>
 <div class="ulist">
 <ul>
 <li>
 <p>Возможность "позвонить";</p>
 </li>
 <li>
-<p><span class="line-through">Фильтр/Поиск услуг;</span></p>
+<p>Фильтр/Поиск услуг;</p>
 </li>
 <li>
 <p>Переход на главную;</p>
@@ -1189,7 +1247,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/bar_mobile.png"><img src="images/bar_mobile.png" alt="top bar" width="200"></a>
+<a class="image" href="images/bar_mobile.png"><img src="images/bar_mobile.png" alt="top bar" width="300"></a>
 </div>
 </div>
 </div>
@@ -1198,7 +1256,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>логотип (слева) + <span class="line-through">"Эвренсел" + (если влезет)</span> фраза "Доступное строительство";</p>
+<p>логотип (центр) + <span class="line-through">"Эвренсел" + (если влезет) фраза "Доступное строительство" </span>;</p>
 </li>
 <li>
 <p>значок звонка + номер телефона цифрами (справа);</p>
@@ -1207,7 +1265,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>ниже номера телефона "ЗАКАЗАТЬ ЗВОНОК";</p>
 </li>
 <li>
-<p><span class="line-through">значок поиска (слева);</span></p>
+<p>элемент навигации "назад";</p>
+</li>
+<li>
+<p>значок поиска (слева);</p>
 </li>
 </ul>
 </div>
@@ -1226,7 +1287,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/input_tel_num.png"><img src="images/input_tel_num.png" alt="input mobile number" width="200"></a>
+<a class="image" href="images/input_tel_num.png"><img src="images/input_tel_num.png" alt="input mobile number" width="300"></a>
 </div>
 </div>
 </div>
@@ -1246,13 +1307,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>"Номер телефона" (Обязательное);</p>
 </li>
 <li>
-<p>"Опишите заказываемую работу" (Необязательное);</p>
+<p>"Опишите необходимую работу" (Необязательное);</p>
 <details>
 <summary class="title">Показать</summary>
 <div class="content">
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/return_call_modal.png"><img src="images/return_call_modal.png" alt="return call" width="300"></a>
+<a class="image" href="images/return_call_modal.png"><img src="images/return_call_modal.png" alt="return call" width="500"></a>
 </div>
 </div>
 </div>
@@ -1301,12 +1362,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p>Если открыта карточка услуги (или открыт поиск/фильтр), то есть возможность вернуться обратно, сбросить фильтр.</p>
+</div>
+<details>
+<summary class="title">Показать</summary>
+<div class="content">
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/airbnb.png"><img src="images/airbnb.png" alt="search panel" width="300"></a>
+</div>
+</div>
+</div>
+</details>
 </div>
 </div>
 <div class="sect3">
 <h4 id="truetab-bar-bottom-navigation-menu"><a class="anchor" href="#truetab-bar-bottom-navigation-menu"></a>Tab bar (Bottom navigation menu)</h4>
 <div class="sect4">
-<h5 id="trueфункциональность-2"><a class="anchor" href="#trueфункциональность-2"></a>Функциональность</h5>
+<h5 id="trueфункциональность"><a class="anchor" href="#trueфункциональность"></a>Функциональность</h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1324,7 +1398,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="images/show_hide_menu.gif" alt="search list">
 </div>
-<div class="title">Figure 15. На gif показ/скрытие верхнее меню</div>
+<div class="title">Figure 16. На gif показ/скрытие верхнее меню</div>
 </div>
 </div>
 <div class="sect4">
@@ -1363,7 +1437,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="truefooter-подвал"><a class="anchor" href="#truefooter-подвал"></a>Footer (Подвал)</h4>
 <div class="sect4">
-<h5 id="trueфункциональность-3"><a class="anchor" href="#trueфункциональность-3"></a>Функциональность</h5>
+<h5 id="trueфункциональность-2"><a class="anchor" href="#trueфункциональность-2"></a>Функциональность</h5>
 <div class="paragraph">
 <p>Предоставить краткую информацию о компании, времени работы, способах оплаты, контакты для связи и списке выполняемых/услуг и о районах присутствия. Вообщем для тех кто любит текст и привык листать сразу в самый "низ".</p>
 </div>
@@ -1385,13 +1459,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/futer1.png"><img src="images/futer1.png" alt="futer" width="500"></a>
 </div>
-<div class="title">Figure 16. Общий пример "полоса" + "районы присутствия"</div>
+<div class="title">Figure 17. Общий пример "полоса" + "районы присутствия"</div>
 </div>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/footer_ex1.png"><img src="images/footer_ex1.png" alt="futer" width="500"></a>
 </div>
-<div class="title">Figure 17. Пример "полосы" футера</div>
+<div class="title">Figure 18. Пример "полосы" футера</div>
 </div>
 </div>
 <div class="sect4">
@@ -1570,7 +1644,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="sect3">
-<h4 id="truetop-search-bar-шапка-2"><a class="anchor" href="#truetop-search-bar-шапка-2"></a>Top Search Bar ("Шапка")</h4>
+<h4 id="truetop-search-bar-шапка"><a class="anchor" href="#truetop-search-bar-шапка"></a>Top Search Bar ("Шапка")</h4>
 <div class="paragraph">
 <p>Общий компонет см. <a href="#truetop-search-bar-шапка">Top Search Bar ("Шапка")</a></p>
 </div>
@@ -1584,7 +1658,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect4">
-<h5 id="trueфункциональность-4"><a class="anchor" href="#trueфункциональность-4"></a>Функциональность</h5>
+<h5 id="trueфункциональность-3"><a class="anchor" href="#trueфункциональность-3"></a>Функциональность</h5>
 <div class="paragraph">
 <p>Возможность быстро найти и перейти на "форму заказа услуги/работы" <a href="#trueorder-form-форма-заказакарточка-услуги">Order Form (Форма заказа/Карточка услуги)</a> (отдельное модальное окно).
 <span class="line-through">Рассмотреть вариант добавления "визуализации" с группировкой, тоесть пользователь кликает по иконке и автоматически происходить пересортировка (подтягиваются и связываются иконки сопутствующих услуг), при этом основная иконка "переворачивается" (эффект), становится большой/в центре (растягивается в полную ширину экрана/но не высоту) на которой выводится доп. инфа, а при клике (получается втором) уже происходит переход на страницу с описание/калькулятор;</span></p>
@@ -1712,14 +1786,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="trueorder-form-форма-заказакарточка-услуги"><a class="anchor" href="#trueorder-form-форма-заказакарточка-услуги"></a>Order Form (Форма заказа/Карточка услуги)</h4>
 <div class="sect4">
-<h5 id="trueфункциональность-5"><a class="anchor" href="#trueфункциональность-5"></a>Функциональность</h5>
+<h5 id="trueфункциональность-4"><a class="anchor" href="#trueфункциональность-4"></a>Функциональность</h5>
 <div class="paragraph">
 <p>Предоставить расширенную информацию о услуге/работе.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="trueпример-5"><a class="anchor" href="#trueпример-5"></a>Пример</h5>
-
+<details>
+<summary class="title">Показать</summary>
+<div class="content">
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/order_calc.png"><img src="images/order_calc.png" alt="order" width="200"></a>
+</div>
+</div>
+</div>
+</details>
 </div>
 <div class="sect4">
 <h5 id="trueсостав-5"><a class="anchor" href="#trueсостав-5"></a>Состав</h5>
@@ -1759,7 +1842,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="trueour-works-наши-работы"><a class="anchor" href="#trueour-works-наши-работы"></a>Our works  (Наши работы)</h4>
 <div class="sect4">
-<h5 id="trueфункциональность-6"><a class="anchor" href="#trueфункциональность-6"></a>Функциональность</h5>
+<h5 id="trueфункциональность-5"><a class="anchor" href="#trueфункциональность-5"></a>Функциональность</h5>
 <div class="paragraph">
 <p>Предоставить возможность ознакомиться с фотографиями реальных работ.</p>
 </div>
@@ -1770,13 +1853,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/g_slider.png"><img src="images/g_slider.png" alt="slider" width="500"></a>
 </div>
-<div class="title">Figure 18. Пример горизонтального слайдера (ikea)</div>
+<div class="title">Figure 19. Пример горизонтального слайдера (ikea)</div>
 </div>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/g_slider2.png"><img src="images/g_slider2.png" alt="slider" width="500"></a>
 </div>
-<div class="title">Figure 19. Пример горизонтального слайдера (myspace)</div>
+<div class="title">Figure 20. Пример горизонтального слайдера (myspace)</div>
 </div>
 </div>
 <div class="sect4">
@@ -1795,7 +1878,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="trueleave-request-оставить-заявку"><a class="anchor" href="#trueleave-request-оставить-заявку"></a>Leave request (Оставить заявку)</h4>
 <div class="sect4">
-<h5 id="trueфункциональность-7"><a class="anchor" href="#trueфункциональность-7"></a>Функциональность</h5>
+<h5 id="trueфункциональность-6"><a class="anchor" href="#trueфункциональность-6"></a>Функциональность</h5>
 <div class="paragraph">
 <p>Оставить заявку с возможностью добавить файл.</p>
 </div>
@@ -1806,7 +1889,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/leave_request.png"><img src="images/leave_request.png" alt="lleave_request" width="500"></a>
 </div>
-<div class="title">Figure 20. Пример формы оставить заявку</div>
+<div class="title">Figure 21. Пример формы оставить заявку</div>
 </div>
 </div>
 <div class="sect4">
@@ -1909,7 +1992,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="truesidebars-боковое-меню"><a class="anchor" href="#truesidebars-боковое-меню"></a>Sidebars (Боковое меню)</h3>
 <div class="paragraph">
-<p>"Домик" который в версии mobile фактически первый экран, то в версии PC становится левым меню.</p>
+<p>"Домик" (с пазлами) который в версии mobile фактически первый экран, то в версии PC становится левым меню.</p>
 </div>
 <div class="sect3">
 <h4 id="trueглавная"><a class="anchor" href="#trueглавная"></a>Главная</h4>
@@ -2184,7 +2267,7 @@ https://www.vedomosti.ru/technology/articles/2020/01/12/820396-prodano-30-smartf
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-13 17:10:20 +0300
+Last updated 2021-03-15 04:38:54 +0300
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
