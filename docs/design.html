@@ -452,7 +452,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#truedesign-idea-дизайн-идея">Design Idea (Дизайн идея)</a>
 <ul class="sectlevel2">
 <li><a href="#truebase-базовые-требования">Base (Базовые требования)</a></li>
-<li><a href="#trueadditional-дополнительно">Additional (Дополнительно)</a>
+<li><a href="#trueadditional-дополнительные">Additional (Дополнительные)</a>
 <ul class="sectlevel3">
 <li><a href="#truecolor-цвета">Color (Цвета)</a></li>
 <li><a href="#truelogo-логотип">Logo (Логотип)</a></li>
@@ -475,7 +475,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#truereused-parts-переиспользуемые-части">Reused parts (Переиспользуемые части)</a>
 <ul class="sectlevel3">
 <li><a href="#truetop-bar-шапка">Top Bar ("Шапка")</a></li>
-<li><a href="#truetab-bar-bottom-navigation-menu">Tab Bar (Bottom navigation menu)</a></li>
+<li><a href="#truetab-bartoolbars-bottom-navigation-menu">Tab Bar/Toolbars (Bottom navigation menu)</a></li>
 <li><a href="#truefooter-подвал">Footer (Подвал)</a></li>
 </ul>
 </li>
@@ -486,7 +486,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#trueorder-form-форма-заказа">Order Form (Форма заказа)</a></li>
 <li><a href="#trueour-works-наши-работы">Our works  (Наши работы)</a></li>
 <li><a href="#trueleave-request-оставить-заявку">Leave request (Оставить заявку)</a></li>
-<li><a href="#truetab-bar-bottom-navigation-menu-2">Tab bar (Bottom navigation menu)</a></li>
+<li><a href="#truetab-bar-bottom-navigation-menu">Tab bar (Bottom navigation menu)</a></li>
 <li><a href="#truefooter-подвал-2">Footer (Подвал)</a></li>
 </ul>
 </li>
@@ -717,7 +717,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="trueadditional-дополнительно"><a class="anchor" href="#trueadditional-дополнительно"></a>Additional (Дополнительно)</h3>
+<h3 id="trueadditional-дополнительные"><a class="anchor" href="#trueadditional-дополнительные"></a>Additional (Дополнительные)</h3>
 <div class="sect3">
 <h4 id="truecolor-цвета"><a class="anchor" href="#truecolor-цвета"></a>Color (Цвета)</h4>
 <div class="paragraph">
@@ -1012,7 +1012,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="title">"Палка, Палка, Огуречик, Вот и вышел человечек (для общего понимания)."</div>
 </div>
 <div class="paragraph">
-<p>Easy Easy Easy - никакого разбиения на роли, авторизаций, регистраций, админок, форм оплаты, сложных процессов, на первом этапе все максимально просто и топорно на "ручном приводе".</p>
+<p>Easy Easy Easy - никакого разбиения на роли, авторизаций, регистраций, админок, форм оплаты, сложных процессов, на первом этапе все максимально просто и топорно на "ручном приводе".
+Всё крутится вокруг единственной бизнес сущности "Заказ";</p>
 </div>
 <div class="paragraph">
 <p><strong>Роль клиент</strong><br>
@@ -1021,13 +1022,42 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Поиск услуги/работы;</p>
+<p><strong>Поиск</strong> услуги/работы;</p>
 </li>
 <li>
-<p>Ознакомиться с описанием/фотками работ тем или иным способом;</p>
+<p>Ознакомиться/<strong>просмотр</strong> с описанием и фотками работ/услуг тем или иным способом;</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Реально выполненных работ;</p>
+</li>
+<li>
+<p>Подробным описанием каждой работы;</p>
+</li>
+</ol>
+</div>
 </li>
 <li>
 <p>И как результат первых двух пунктов <strong>оформление заказа</strong> тем или иным способом;</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>По звонку на указанный на сайте номер телефона;</p>
+</li>
+<li>
+<p>Заказ обратного звонка через форму на сайте;</p>
+</li>
+<li>
+<p>Отправкой Email-письма;</p>
+</li>
+<li>
+<p>Взаимодействие через мессенджеры;</p>
+</li>
+<li>
+<p>Оформление через форму заказа;</p>
+</li>
+</ol>
+</div>
 </li>
 </ol>
 </div>
@@ -1041,7 +1071,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>обработка/прием заказов (предоставлено чисто информационно, сотрудник никак не взаимодействует с сайтом при обработке заказа). Cотрудник получает предварительную заявку/заказ от клиента, которую клиент может оставить разными способами, через разные каналы обслуживания (звонок, на сайте через форму, Email, через мессенджер). Далее сотрудник уточняет параметры заказа, опционально опредлагает услугу оценки, если цена клиента устраивает, то отправляет реквизиты для оплаты или просто договариваются с оплатой по факту выполненной работы или еще как договорятся (все максимально гибко, может даже "бартер" быть). Весь учет заказов в Excel с хранением в облаке за исключением бухгалтерии (1С). И большего пока не нужно;</p>
+<p>обработка/приём заказов (предоставлено чисто информационно, сотрудник никак не взаимодействует с сайтом при обработке заказа). Cотрудник получает предварительную заявку/заказ от клиента, которую клиент может оставить разными способами, через разные каналы обслуживания (звонок, на сайте через форму, Email, через мессенджер). Далее сотрудник уточняет параметры заказа, опционально предлагает услугу оценки, если цена клиента устраивает, то отправляет реквизиты для оплаты или просто договариваются с оплатой по факту выполненной работы или ещё как договорятся (все максимально гибко, может даже "бартер" быть). Весь учет заказов в Excel с хранением в облаке за исключением бухгалтерии (1С). И большего пока не нужно;</p>
 </li>
 <li>
 <p>Настройка приоритизация услуг = "раз в квартал" путём изменения кода сайта;</p>
@@ -1069,73 +1099,111 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <caption class="title">Table 1. Checklist</caption>
 <colgroup>
 <col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 50%;">
+<col style="width: 16.6667%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Требование</th>
-<th class="tableblock halign-left valign-top">Описание</th>
+<th class="tableblock halign-left valign-top">Описание/предложения</th>
 <th class="tableblock halign-left valign-top">Оценка</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Общая стилистика пазлы</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">В мобильной версии Ок, в PC подумать над оформлением</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>В мобильной версии Ок, в PC подумать над оформлением (см. зарисовку).</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span>
+<span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span>
+<span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Быть простым, как 1-2-3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Вполне</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Вполне.</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Выглядеть как приложение (SPA)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">В мобильной версии да, то, что нужно.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>В мобильной версии да, то, что нужно.</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">"Легким", но при этом достаточно строгим и при этом в меру "весёлым"</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Домик в мобильной версии веселый, в версии для PC можно поработать</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-thumbs-up fa-2x"></i></span> <span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Домик в мобильной версии весёлый (возможно нужно будет изменить цвета под общий стиль дизайна), в версии для PC можно поработать, добавить работников на основе персонажа.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span> <span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Снимать планируемую, очевидную нагрузку с "мозга"</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Плохо. Вариант с анимацией сложный.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Плохо. Вариант с анимацией сложный и только для PC. Нужно поискать что-то более простое.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span> <span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span> <span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Боль: Отсутствие стоимости (ценника)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Плохо, что не на первом экране.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Плохо, что не на первом экране для mobile. В версии для PC можно добавить в "карточку" появляющуюся по hotspot, то в версии mobile всё сложней. Перегружать информацией пазл желания нет.
+Есть идея, добавить "знак качества" выше домика вот такой элемент (4 пазлами вокруг)</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/us-puzzle-piece-circle.jpg"><img src="images/us-puzzle-piece-circle.jpg" alt="Пример пазлов плиток (стилизированных по дом)" width="200"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Круг <span class="underline">возможно</span> стоит преобразовать в 5-угольник (ассоциация знак качества СССР)</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/otk.png"><img src="images/otk.png" alt="Пример пазлов плиток (стилизированных по дом)" width="200"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Гарантия, Без посредников, Соблюдаем сроки, Фиксированная стоимость. В центре лого компании с текстом "Доступное строительство". При клике пользователь перемещается на отдельную страницу преимуществ, где в красках описано решение болей клиента.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span>
+<span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span>
+<span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Боль: Сроки (время)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Плохо, что не на первом экране.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Плохо в mobile версии, что отсутствует не на первом экране. См. замечание про ценник.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span> <span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Боль: Посредники</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Плохо не выделено на первом экране, возможно  создать доп. раздел. на главной.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Плохо не выделено на первом экране, возможно  создать доп. раздел. на главной.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span>
+<span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span>
+<span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Боль: Качество</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Плохо не выделено на первом экране</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Функция интерфейса: Приоритизация услуг/работ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Удовлетворительно. В версии для PC</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Плохо не выделено на первом экране. Если в версии PC можно добавить в слайдер "с домом/машиной", то в mobile все сложней. Раздел "наши преимущества" делать не очень хотелось, возможно можно придумать что-то еще.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span> <span class="icon yellow"><i class="fa fa-question fa-2x"></i></span></p></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Функция интерфейса: Поиск услуг/работ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ок</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-thumbs-up fa-2x"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Функция интерфейса: Приоритизация услуг/работ</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Удовлетворительно. Группы услуг выделены. В версии для PC группы экранами, в mobile пазлами разделителями. Как таковая приоритизация присутствует только в мобильной версии (путем частичного перемещения "повторяемых" пазлов). Возможно можно придумать что-то еще.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon yellow"><i class="fa fa-question fa-2x"></i></span> <span class="icon red"><i class="fa fa-thumbs-down fa-2x"></i></span></p></td>
 </tr>
 </tfoot>
 </table>
@@ -1148,7 +1216,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul>
 <li>
 <p>[mobile] стилизированный "живой" дом состоящий из <a href="#truemenu-list-of-works">иконок-пазлов</a>. "Жмакнули" по пазлу - перешли на <a href="#trueorder-form-форма-заказа">форму <strong>заказ</strong>а</a>,
-где можно оформить собственно заказ или перейти на страницу с расширенным описанием услуги;</p>
+где можно оформить собственно <a href="#truetab-bartoolbars-bottom-navigation-menu">заказ или перейти на страницу с расширенным описанием услуги</a>;</p>
 </li>
 </ul>
 </div>
@@ -1156,13 +1224,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <a class="image" href="images/puzzle_house.jpg"><img src="images/puzzle_house.jpg" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
 </div>
-<div class="title">"Зарисовка"</div>
+<div class="title">"Зарисовка (домик/меню из пазлов)"</div>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/puzzle_house_draft.svg"><img src="images/puzzle_house_draft.svg" alt="Черновой вариант (домик/меню из пазлов)" width="500"></a>
+<a class="image" href="images/mobile_search_bar_puzzle.png"><img src="images/mobile_search_bar_puzzle.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
 </div>
-<div class="title">Черновой вариант (домик/меню из пазлов)</div>
+<div class="title">"Зарисовка (домик + верхний бар с поиском)"</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/mobile_footer_puzzle.png"><img src="images/mobile_footer_puzzle.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
+</div>
+<div class="title">"Зарисовка (слайдер/карусель и футер)"</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1184,7 +1258,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Дом с участком (экран по-умолчанию);</p>
 </li>
 <li>
-<p>Доставка (машинка);</p>
+<p>Доставка (машинка) - под вопросом, нужна ли?;</p>
 </li>
 <li>
 <p>Коммерческие объекты (аналогично дому);</p>
@@ -1195,8 +1269,38 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
+<p>В самом вверху <strong>информационный Bar</strong> совмещённый с мастером (wizard). Слева лого, справа кликабельный номер телефона и "заказать звонок". Снизу в Bar "врезается мастер" подбора услуги/работы (для примера посмотреть мастер airbnb.com). Мастер состоит из пронумерованных пазлов (шаги для оформления заказа).</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Какая нужна работа/услуга (или выберете работу/услугу);</p>
+</li>
+<li>
+<p>Опишите работу;</p>
+</li>
+<li>
+<p>Когда нужно? (календарь);</p>
+</li>
+<li>
+<p>Ваши контакты (клиент может оставить не только телефон, но и почту, одноклассники, и.т.д.);</p>
+</li>
+<li>
+<p>Отправить заказ (активна, только после того, как первые 4 пункта выбрали).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Слева меню (домик) - см. выше домик для мобильной версии (боковое меню удобно на PC).
+Если пользователь "Жмакнул" по пазлу то на доме открывается соответствующий hotspot с мини карточкой.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
 <p><strong>Дом с участком</strong><br>
-Сразу после верхнего меню должна располагаться анимированная иллюстрация двух домов с участком и постройками (соседей). На первом этапе одного дома (без анимации). Дом имет два переключаемых вида (Переключается ползунком) или один, но разделенный на два вида:</p>
+Сразу после верхнего меню должна располагаться анимированная иллюстрация двух домов с участком и постройками (соседей). <strong>На первом этапе одного дома (без анимации)</strong>. Дом имеет два переключаемых вида (Переключается ползунком справа) или один, но разделённый на два вида:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1228,9 +1332,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
+<a class="image" href="images/pc_main_house.png"><img src="images/pc_main_house.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
+</div>
+<div class="title">"Зарисовка (домик с участком изометрия) - главная"</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
 <a class="image" href="images/house_variant.png"><img src="images/house_variant.png" alt="house variant" width="500"></a>
 </div>
-<div class="title">Пример домика</div>
+<div class="title">Пример домика с участком (есть в векторе)</div>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1262,6 +1372,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect3">
 <h4 id="trueicons-вариант-в-виде-иконок"><a class="anchor" href="#trueicons-вариант-в-виде-иконок"></a>Icons (Вариант в виде иконок)</h4>
+<details>
+<summary class="title">Показать</summary>
+<div class="content">
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1269,20 +1382,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Вроде все просто и понятно, но не то (вариант отброшен, оставлен для понимания).
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Вроде все просто и понятно, но не то (вариант отброшен, оставлен для понимания).</p>
 </div>
-<div class="sect4">
-<h5 id="truemobile"><a class="anchor" href="#truemobile"></a>Mobile</h5>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
 <div class="paragraph">
 <p>Недостатки:</p>
 </div>
@@ -1322,9 +1424,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="title">Черновой вариант</div>
 </div>
 </div>
+</details>
 </div>
 <div class="sect3">
 <h4 id="truemobilevariant-alt"><a class="anchor" href="#truemobilevariant-alt"></a>Mobile/Variant "alt"</h4>
+<details>
+<summary class="title">Показать</summary>
+<div class="content">
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1343,6 +1449,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="title">На подумать</div>
 </div>
+</div>
+</details>
 </div>
 </div>
 </div>
@@ -1438,7 +1546,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="content">
 <div class="paragraph">
 <p>Меню (Меню-гамбургер) в мобильной версии не реализуется - просто "Bar" с поиском/фильтром и возможностью позвонить. На макете нужно дополнительно отрисовать установку и сброс фильтра (фактически это затрагивает навигацию).
-Возможно поиск сделать отдельной строкой (сдвоенной с верхнем баром, чтобы всегда был виден без всякой доп. логики скрытия/показа).</p>
+Возможно поиск сделать отдельной строкой (сдвоенной с верхнем баром, чтобы всегда был виден без всякой доп. логики скрытия/показа - см. ниже пример IKEA).</p>
 </div>
 </td>
 </tr>
@@ -1465,13 +1573,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect4">
 <h5 id="trueпример"><a class="anchor" href="#trueпример"></a>Пример</h5>
-<div class="paragraph">
-<p>Обратить внимание на правую часть.</p>
-</div>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/bar_mobile.png"><img src="images/bar_mobile.png" alt="top bar" width="300"></a>
 </div>
+<div class="title">mobile</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/bar_search_ikea.png"><img src="images/bar_search_ikea.png" alt="search" width="300"></a>
+</div>
+<div class="title">Вариант с отдельным элементом поиска.</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/bar_pc.png"><img src="images/bar_pc.png" alt="top bar" width="500"></a>
+</div>
+<div class="title">pc</div>
 </div>
 </div>
 <div class="sect4">
@@ -1479,7 +1597,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>логотип (центр) + <span class="line-through">"Эвренсел" + (если влезет) фраза "Доступное строительство" </span>;</p>
+<p>логотип (слева) + <span class="line-through">"Эвренсел"</span> + (если влезет) фраза "Доступное строительство" ;</p>
 </li>
 <li>
 <p>значок звонка + номер телефона цифрами (справа);</p>
@@ -1610,16 +1728,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="truetab-bar-bottom-navigation-menu"><a class="anchor" href="#truetab-bar-bottom-navigation-menu"></a>Tab Bar (Bottom navigation menu)</h4>
+<h4 id="truetab-bartoolbars-bottom-navigation-menu"><a class="anchor" href="#truetab-bartoolbars-bottom-navigation-menu"></a>Tab Bar/Toolbars (Bottom navigation menu)</h4>
 <div class="sect4">
 <h5 id="trueфункциональность"><a class="anchor" href="#trueфункциональность"></a>Функциональность</h5>
 <div class="ulist">
 <ul>
 <li>
-<p>Возможность "позвонить";</p>
+<p>Навигация (Вернуться к списку услуг/работ);</p>
 </li>
 <li>
-<p>Вернуться к списку услуг/работ;</p>
+<p>Действия (Создать заказ);</p>
 </li>
 </ul>
 </div>
@@ -1627,7 +1745,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect4">
 <h5 id="trueпример-2"><a class="anchor" href="#trueпример-2"></a>Пример</h5>
 <div class="paragraph">
-<p>Пример m.youtube.com (тут нижнее меню используется для навигации, а в нашем случае для действия), но логика показа/скрытия совпадает. Если пользователь листает вверх то появляется верхнее меню, вниз верхнее скрывается. Если достигли верха или низа, то оба меню показываются пользователю.</p>
+<p>Пример m.youtube.com (тут нижнее меню используется для навигации, а в нашем случае для действие + навигация - обсуждаемо), но логика показа/скрытия совпадает. Если пользователь листает вверх то появляется верхнее меню, вниз верхнее скрывается. Если достигли верха или низа, то оба меню показываются пользователю.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -2341,9 +2459,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="truetab-bar-bottom-navigation-menu-2"><a class="anchor" href="#truetab-bar-bottom-navigation-menu-2"></a>Tab bar (Bottom navigation menu)</h4>
+<h4 id="truetab-bar-bottom-navigation-menu"><a class="anchor" href="#truetab-bar-bottom-navigation-menu"></a>Tab bar (Bottom navigation menu)</h4>
 <div class="paragraph">
-<p>Общий компонент см. <a href="#truetab-bar-bottom-navigation-menu-2">Tab bar (Bottom navigation menu)</a>.</p>
+<p>Общий компонент см. <a href="#truetab-bar-bottom-navigation-menu">Tab bar (Bottom navigation menu)</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2489,7 +2607,7 @@ https://www.vedomosti.ru/technology/articles/2020/01/12/820396-prodano-30-smartf
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-17 19:53:26 +0300
+Last updated 2021-03-18 16:37:18 +0300
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
