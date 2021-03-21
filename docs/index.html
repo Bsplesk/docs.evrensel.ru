@@ -478,6 +478,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#truesite-structure-структура-сайта">Site structure  (Структура сайта)</a>
 <ul class="sectlevel2">
+<li><a href="#trueвнутренняя-структура-сайта">Внутренняя структура сайта</a></li>
+<li><a href="#trueчерновик-структуры-страницсайта">Черновик структуры страниц/сайта</a></li>
 <li><a href="#truereused-parts-переиспользуемые-части">Reused parts (Переиспользуемые части)</a>
 <ul class="sectlevel3">
 <li><a href="#truetop-bar-шапка">Top Bar ("Шапка")</a>
@@ -714,6 +716,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p>Короткий процесс оформления заказа (максимально "два экрана");</p>
+</li>
+<li>
+<p>Текст максимально простой/понятный любому, немного "деревенский", что-то из разряда "Что, Где, Когда";</p>
 </li>
 <li>
 <p>Иметь все необходимое, что помочь решить <a href="#trueclients-pains-боли-клиента">Clients pains ("Боли клиента")</a>, частично описанные выше;</p>
@@ -1123,8 +1128,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </table>
 </div>
+<details>
+<summary class="title">Показать текущий Checklist/замечания прототипа</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Checklist</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 50%;">
@@ -1235,6 +1242,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tfoot>
 </table>
+</div>
+</details>
 <div class="sect4">
 <h5 id="trueuser-story-общая"><a class="anchor" href="#trueuser-story-общая"></a>User Story (Общая)</h5>
 <div class="paragraph">
@@ -1242,19 +1251,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="olist arabic">
 <ol class="arabic">
-<li>
-<p><a href="#truemenu-list-of-works">"Витрину работ/услуг"</a> в зависимости от типа устройства представляющую собой:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p><a href="#truemobile-wireframe">mobile</a>: домик из пазлов-кнопок;</p>
-</li>
-<li>
-<p><a href="#truepc-wireframe">PC</a>: Слайдер/карусель с картинкой c hotspot в изометрии + боковое меню/Sidebar (домик из пазлов-кнопок);</p>
-</li>
-</ol>
-</div>
-</li>
 <li>
 <p><a href="#truequality-mark-знак-качества">"Знак качества"</a> (см. checklist);</p>
 <div class="olist loweralpha">
@@ -1264,6 +1260,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p><a href="#truepc-wireframe">PC</a>: знак качества располагается на картинке в изометрии (см. зарисовку);</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="#truemenu-list-of-works">"или Витрину работ/услуг"</a> в зависимости от типа устройства представляющую собой:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="#truemobile-wireframe">mobile</a>: домик из пазлов-кнопок;</p>
+</li>
+<li>
+<p><a href="#truepc-wireframe">PC</a>: Слайдер/карусель с картинкой c hotspot в изометрии + боковое меню/Sidebar (домик из пазлов-кнопок);</p>
 <div class="paragraph">
 <p>Далее внимание клиента должно "упасть" на:</p>
 </div>
@@ -1280,9 +1289,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p><a href="#truepc-wireframe">PC</a>: мастером/Wizard с возможность оформить заказ (прямо на главной). В версии PC это может быть первое, на, что обращается внимание клиент;</p>
-<div class="paragraph">
-<p>На самом баре также отображается, логотип, кликабельный номер телефона и возможность создания запроса на "Обратный звонок"&#8230;&#8203; etc. В зависимости от устройства (PC/Mobile), отображается больше или меньше. При оформлении заказа, bar скрывается;</p>
-</div>
 </li>
 </ol>
 </div>
@@ -1296,7 +1302,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ol>
 </div>
 <div class="paragraph">
-<p>Клиент оформляет заказ (способы/обсудить голосом, см. описание для каждого устройства и компонента (логику).</p>
+<p>Клиент оформляет заказ одним из способов (см. ниже описание для каждого устройства, компонента (логику) и <a href="#trueчерновик-структуры-страницсайта">структуру сайта</a>).</p>
 </div>
 <div class="paragraph">
 <p><strong>Опционально (скорей всего исключить из <span class="underline">ленты</span>)</strong></p>
@@ -1327,35 +1333,49 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect4">
 <h5 id="truemobile-wireframe"><a class="anchor" href="#truemobile-wireframe"></a>Mobile Wireframe</h5>
-<div class="paragraph">
-<p>В <a href="#truetop-bar-шапка">"top bar"</a> интегрирован поиск, при активации, лого, номер тел. скрываются, поле поиска расширяется на всю ширину бара.</p>
-</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#truetop-bar-шапка">"top bar"</a> с  интегрированным поиском:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>при активации, лого, номер тел., заказать звонок, скрываются, поле поиска расширяется на всю ширину бара (цель сделать шрифт покрупней);</p>
+</li>
+<li>
+<p>При клике на "ЗАКАЗАТЬ ЗВОНОК" открывается форма <a href="#trueleave-request-оставить-заявку">обратного звонка</a>, фактически упрощённая версия создания заказа, где не требуется обязательно выбирать необходимую услугу/работу (достаточно имени и телефона);</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/mobile_search_bar_puzzle.png"><img src="images/mobile_search_bar_puzzle.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
 </div>
 <div class="title">"Зарисовка (домик + верхний бар с поиском)"</div>
 </div>
-<div class="paragraph">
-<p><a href="#truemenu-list-of-works">Витрина работ/услуг</a>  стилизированный "живой" дом состоящий из <a href="#truemenu-list-of-works">иконок-пазлов</a>. "Жмакнули" по пазлу - перешли на <a href="#trueorder-form-форма-заказа">форму <strong>заказ</strong>а</a>, где можно оформить собственно <a href="#trueorder-form-форма-заказа">заказ</a> или перейти на <a href="#truejob-page-страница-работыуслуги">страницу с расширенным описанием услуги</a>;</p>
+</li>
+</ol>
 </div>
+</li>
+<li>
+<p><a href="#truemenu-list-of-works">Витрина работ/услуг</a>  стилизированный "живой" дом состоящий из <a href="#truemenu-list-of-works">иконок-пазлов</a>. "Жмакнули" по пазлу - перешли на <a href="#trueorder-form-форма-заказа">форму <strong>заказ</strong>а</a>, где можно оформить собственно <a href="#trueorder-form-форма-заказа">заказ</a> или перейти на <a href="#truejob-page-страница-работыуслуги">страницу с расширенным описанием услуги</a>;</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/puzzle_house.jpg"><img src="images/puzzle_house.jpg" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
 </div>
 <div class="title">"Зарисовка (домик/меню из пазлов)"</div>
 </div>
-<div class="paragraph">
-<p>Ниже "Витрины работ/услуг" располагается горизонтальный <a href="#trueour-works-наши-работы">слайдер/карусель с примерами реальных работ</a> и функцией - "перейти к заказу";</p>
-</div>
+</li>
+<li>
+<p>Ниже "Витрины работ/услуг" располагается горизонтальный <a href="#trueour-works-наши-работы">слайдер/карусель с примерами реальных работ</a> и функцией - <a href="#trueorder-form-форма-заказа">"перейти к оформлению заказа"</a>, его задача дать клиенту заказать "хочу такое же как на картинке");</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/mobile_footer_puzzle.png"><img src="images/mobile_footer_puzzle.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
 </div>
 <div class="title">"Зарисовка (слайдер/карусель и футер)"</div>
 </div>
-<div class="paragraph">
-<p>Ниже <a href="#truemenu-list-of-works">Витрины работ/услуг</a> и Слайдера/карусели с картинкой в изометрии (в версии для PC), располагается <a href="#trueour-works-наши-работы">горизонтальный слайдер/карусель с примерами реальных работ</a> с  функцией - "перейти к заказу";<br></p>
+</li>
+<li>
+<p>Ниже <a href="#truemenu-list-of-works">Витрины работ/услуг</a> и Слайдера/карусели с реальных работ, располагается <a href="#truefooter-подвал">футер/подвал</a> (для тех кто привык листать в самый низ);<br></p>
+</li>
+</ol>
 </div>
 </div>
 <div class="sect4">
@@ -1445,7 +1465,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p><strong>3: Ваш контакт</strong>. "Жмакнули" по пазлу, появилась форма, ввода клиентских данных.  Клиент может оставить не только телефон, но и почту, одноклассники, и.т.д., но что-то одно он должен оставить (обязательное поле);</p>
+<p><strong>3: Ваш контакт</strong>. "Жмакнули" по пазлу, появилась форма, ввода клиентских данных.  Клиент может оставить не только телефон, но и почту, whatsapp, одноклассники, и.т.д., но что-то одно он должен оставить (обязательное поле);</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Телефон;</p>
+</li>
+<li>
+<p>whatsapp;</p>
+</li>
+<li>
+<p>Email;</p>
+</li>
+</ol>
+</div>
 </li>
 <li>
 <p><strong>Отправить заказ</strong> (активна, только после того, как первые 3 пункта выбрали). После успешной процедуры должна появится подтверждающие "модалка Ок", символизирующая об успешном выполнении операции.</p>
@@ -1762,8 +1795,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="truesite-structure-структура-сайта"><a class="anchor" href="#truesite-structure-структура-сайта"></a>Site structure  (Структура сайта)</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="trueвнутренняя-структура-сайта"><a class="anchor" href="#trueвнутренняя-структура-сайта"></a>Внутренняя структура сайта</h3>
 <div class="olist arabic">
-<div class="title">Внутренняя структура сайта</div>
 <ol class="arabic">
 <li>
 <p>На текущем этапе, <strong>простая - "двухуровневая"</strong> (с точки зрения доменного имени evrensel.ru/service1)/"плоская"(с точки зрения расположения файлов - файлы страниц в корневой директории). Главная слинкована со страницами 2-го уровня с возможностью перехода между собой (evrensel.ru/service1, evrensel.ru/sevice2 и т.д.). Логику переходов см. ниже. допускается смешивать. Первоначально планируется классический (первый) вариант, в дальнейшем вариант с возможностью перехода между страницами 2 уровня, но без "проходных" страниц с которых нельзя сразу перейти на главную (второй вариант);</p>
@@ -1812,16 +1846,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p><strong>географическая</strong> (не реализуется на первом этапе, после реализации структура скорей всего останется простой/плоской - "<strong>putiatino</strong>.evrensel.ru/usluga") ;</p>
 </li>
-<li>
-<p>Черновик структуры страниц/сайта</p>
-</li>
 </ol>
 </div>
+</div>
+<div class="sect2">
+<h3 id="trueчерновик-структуры-страницсайта"><a class="anchor" href="#trueчерновик-структуры-страницсайта"></a>Черновик структуры страниц/сайта</h3>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/mind.svg"><img src="images/mind.svg" alt="mind" width="900"></a>
 </div>
 <div class="title">Draft (зеленым отмечена основная функция, с обводкой это страницы (page), стрелками связи).</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="truereused-parts-переиспользуемые-части"><a class="anchor" href="#truereused-parts-переиспользуемые-части"></a>Reused parts (Переиспользуемые части)</h3>
@@ -2977,7 +3012,7 @@ https://www.vedomosti.ru/technology/articles/2020/01/12/820396-prodano-30-smartf
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-21 05:20:40 +0300
+Last updated 2021-03-21 15:20:14 +0300
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
