@@ -493,6 +493,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#truehome-page-главная">Home Page (Главная)</a>
 <ul class="sectlevel3">
 <li><a href="#truetop-search-bar">Top Search Bar</a></li>
+<li><a href="#truequality-mark-знак-качества">Quality Mark (Знак качества)</a></li>
 <li><a href="#truemenu-list-of-works">Menu "List Of Works"</a>
 <ul class="sectlevel4">
 <li><a href="#truemobile-для-мобильных-устройств-2">mobile (Для мобильных устройств)</a></li>
@@ -889,7 +890,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.tinkoff.ru/payments/" class="bare">https://www.tinkoff.ru/payments/</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Пример SPA. Вариант приоритезации.</p>
+<p>Пример SPA. Вариант приоритизации.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1255,7 +1256,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p><a href="#truemenu-list-of-works">"Знак качества"</a> (см. checklist);</p>
+<p><a href="#truequality-mark-знак-качества">"Знак качества"</a> (см. checklist);</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -1374,7 +1375,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>В самом вверху <strong>информационный Bar совмещённый с мастером (wizard)</strong>. Слева лого, справа кликабельный номер телефона и "заказать звонок". В центре/сверху - группы для мастера (wizard) - они же переключают "изометрическую картинку" в слайдере/карусели в центре.</p>
+<p>В самом вверху <strong>информационный Top Bar совмещённый с мастером (wizard)</strong>. Слева лого, справа кликабельный номер телефона и "заказать звонок" (при клике появляется модалка, по сути тотже заказ который можно оформить при помощи мастера, но меньше полей). В центре/сверху - группы для мастера (wizard) - они же переключают "изометрическую картинку" в слайдере/карусели в центре:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1385,43 +1386,105 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p>Доставка;</p>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/pc_main_house_top_bar_line.png"><img src="images/pc_main_house_top_bar_line.png" alt="Верхнее меню (без мастера/wizard)" width="500"></a>
+</div>
+<div class="title">"Зарисовка (Верхнее меню без мастера/wizard)"</div>
+</div>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Снизу в Bar "врезается мастер" подбора услуги/работы (для примера посмотреть мастер airbnb.com). Мастер состоит из пронумерованных пазлов (шаги для оформления заказа).</p>
+<p>Снизу в Bar "врезается <strong>мастер</strong>" подбора услуги/работы (для примера посмотреть мастер airbnb.com). Мастер состоит из пронумерованных пазлов - шаги оформления заказа - всего 3 шага + 4 элемент "Заказать").</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Ограничение: Мастер позволяет оформить только один тип работы/услуги за раз; Чтобы создать заказ нужно выбрать/отметить значение в каждом пазле (их всего 3). Значения в пазлах несвязанные, вводить/корректировать можно в любом порядке.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/pc_main_house_top_bar_wizard.png"><img src="images/pc_main_house_top_bar_wizard.png" alt="Верхнее меню мастер/wizard)" width="500"></a>
+</div>
+<div class="title">"Зарисовка (Верхнее меню мастер/wizard)"</div>
+</div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Какая нужна работа/услуга (или выберете работу/услугу) - фактически поиск с возможностью выбора значений;</p>
+<p><strong>1: Что нужно?</strong> или "Выберите работу". "Жмакнули" по пазлу, появилась форма содержащая:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>поиск/фильтр с возможностью ввода или выбора значения (значений не много ~30) и "крестиком сброса фильтра" или/и сброс путём нажатия "Backspace" (обязательное для ввода поле);</p>
 </li>
 <li>
-<p>Опишите работу - поле ввода;</p>
+<p>поле ввода "Опишите работу" + "прикрепить файл" (необязательны для заполнения);</p>
+</li>
+</ol>
+</div>
 </li>
 <li>
-<p>Когда нужно? (календарь);</p>
+<p><strong>2: Когда и где?</strong>. "Жмакнули" по пазлу, появилась форма, разделенная на две? части (Когда/Где) содержащая из:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Календарь (для выбора конкретной даты/диапазона) + элементы обозначающие месяца (для выбора месяца), можно как-то разделить сверху переключателем, что-то типа "Знаю даты", "Пока неизвестно". Или что-то получше придумать. (обязательное поле);</p>
 </li>
 <li>
-<p>Ваши контакты (клиент может оставить не только телефон, но и почту, одноклассники, и.т.д.) - модалка;</p>
+<p>Выбор города/села (лучше без карты), хотя можно  с ней (необязательное поле);</p>
+</li>
+</ol>
+</div>
 </li>
 <li>
-<p>Отправить заказ (активна, только после того, как первые 4 пункта выбрали).</p>
+<p><strong>3: Ваш контакт</strong>. "Жмакнули" по пазлу, появилась форма, ввода клиентских данных.  Клиент может оставить не только телефон, но и почту, одноклассники, и.т.д., но что-то одно он должен оставить (обязательное поле);</p>
+</li>
+<li>
+<p><strong>Отправить заказ</strong> (активна, только после того, как первые 3 пункта выбрали). После успешной процедуры должна появится подтверждающие "модалка Ок", символизирующая об успешном выполнении операции.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Слева <strong>боковое меню/Sidebar</strong> (витрина работ/услуг, домик из пазлов-кнопок) - см. выше домик для мобильной версии (боковое меню удобно на PC). Если пользователь "Жмакнул" по пазлу то в слайдере/карусели (п.4) выполняется переключается на соответствующий экран/картинку и открывается/отмечается соответствующий hotspot с мини карточкой c дальнейшей возможностью перехода к заказу.</p>
+</li>
+<li>
+<p>В левой/части выше "дома|машины|ком. объекта" значок <a href="#truequality-mark-знак-качества">"качества"</a>. В виде круга 5 пазлов;</p>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>Центр лого;</p>
+</li>
+<li>
+<p>Гарантия;</p>
+</li>
+<li>
+<p>Соблюдаем сроки;</p>
+</li>
+<li>
+<p>Без посредников;</p>
+</li>
+<li>
+<p>Фиксированная стоимость;</p>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/pc_main_house.png"><img src="images/pc_main_house.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
+<a class="image" href="images/pc_main_house_qa.png"><img src="images/pc_main_house_qa.png" alt="pc main house qa" width="300"></a>
 </div>
-<div class="title">"Зарисовка (домик с участком изометрия) - главная"</div>
 </div>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Слева боковое меню/Sidebar (витрина работ/услуг, домик из пазлов-кнопок) - см. выше домик для мобильной версии (боковое меню удобно на PC). Если пользователь "Жмакнул" по пазлу то на изометрическом доме в слайдере/карусели открывается/отмечается соответствующий hotspot с мини карточкой c дальнейшей возможностью перехода к заказу.</p>
-</li>
-<li>
-<p>Ниже слайдер/карусель состоящий из 3 экранов с картинками в изометрии (картинка связана с top bar, переключение картинке в слайдере выполняется там):</p>
+<p>Справа от бокового меню/Sidebar -  <strong>слайдер/карусель</strong> с переключаемыми 3 картинками в изометрии. Переключение  выполняется при помощи top bar (3 верхних пункта Дом|Ком. обекты|Доставка), а также бокового меню/Sidebar):</p>
 <details>
 <summary class="title">Isometric</summary>
 <div class="content">
@@ -1542,8 +1605,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </details>
 <div class="paragraph">
-<p><strong>На первом этапе одного дома (без анимации)</strong>.
+<p><strong>На первом этапе достаточно одного дома (без анимации)</strong>.
 На самом доме, постройках точками (hotspots) отмечены отдельные части (услуги/работы), при наведении или щелчке? появляется краткая информация о услуге/работе (мини-карточка) с возможностью перехода на форму оформления заказа.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/pc_main_house.png"><img src="images/pc_main_house.png" alt="Пример пазлов плиток (стилизированных по дом)" width="500"></a>
+</div>
+<div class="title">"Зарисовка (домик с участком изометрия) - главная"</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1561,12 +1630,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="paragraph">
-<p>Дом имеет два переключаемых вида (Переключается ползунком справа) или один, но разделённый на два вида:</p>
+<p>Дом имеет два переключаемых вида (Переключается ползунком справа) или один, но разделённый на два вида (тогда ползунок не нужен, но хотелось бы переключаемый вид):</p>
 </div>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>дом снаружи/не видно внутренностей (По-умолчанию);</p>
+<p>дом снаружи/не видно внутренних работ (По-умолчанию);</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/house_variant.png"><img src="images/house_variant.png" alt="house variant" width="500"></a>
@@ -1575,22 +1644,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p>дом в разрезе;</p>
+<p>дом в разрезе (отмечены внутренние работы);</p>
 <div class="imageblock text-center">
 <div class="content">
 <a class="image" href="images/house_section.svg"><img src="images/house_section.svg" alt="house section" width="500"></a>
 </div>
-<div class="title">Пример домика в разрезе с условными (hotspots)</div>
+<div class="title">Пример домика в разрезе с условными (hotspots), готовой картинки пока нет.</div>
 </div>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Коммерческие объекты.Все аналогично дому, только за место дома будет условный "магнит";</p>
+<p><strong>Коммерческие объекты</strong>.Все аналогично дому, только за место дома будет условный "магнит";</p>
 </li>
 <li>
-<p>Доставка (машинка);
+<p><strong>Доставка</strong> (машинка);
 Все аналогично дому (возможно лишнее и стоит оставить только коммерческие объекты и дом с участком).</p>
 <div class="imageblock text-center">
 <div class="content">
@@ -2255,6 +2324,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
+<h4 id="truequality-mark-знак-качества"><a class="anchor" href="#truequality-mark-знак-качества"></a>Quality Mark (Знак качества)</h4>
+<div class="paragraph">
+<p>Выше "домика из пазлов" (mobile)  или на слайдере/карусели (PC) вот такой элемент (4 пазлами вокруг)</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/us-puzzle-piece-circle.jpg"><img src="images/us-puzzle-piece-circle.jpg" alt="Пример пазлов плиток (стилизированных по дом)" width="200"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Круг <span class="underline">возможно</span> стоит преобразовать в 5-угольник (ассоциация знак качества СССР)</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="images/otk.png"><img src="images/otk.png" alt="Пример пазлов плиток (стилизированных по дом)" width="200"></a>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="truemenu-list-of-works"><a class="anchor" href="#truemenu-list-of-works"></a>Menu "List Of Works"</h4>
 <div class="admonitionblock tip">
 <table>
@@ -2288,29 +2376,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="images/puzzle_house_future.jpg"><img src="images/puzzle_house_future.jpg" alt="Пример пазлов плиток (стилизированных по дом)" width="300"></a>
+<a class="image" href="images/puzzle_house_draft_full.svg"><img src="images/puzzle_house_draft_full.svg" alt="Пример пазлов плиток (стилизированных по дом)" width="300"></a>
 </div>
 <div class="title">Draft примерно так, должна выглядеть полная версия домика (В процессе доработки).</div>
 </div>
 <div class="paragraph lead">
 <p><em>Состав</em></p>
-</div>
-<div class="paragraph">
-<div class="title">"Знак качества"</div>
-<p>Выше "домика из пазлов" (mobile)  или на слайдере/карусели (PC) вот такой элемент (4 пазлами вокруг)</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/us-puzzle-piece-circle.jpg"><img src="images/us-puzzle-piece-circle.jpg" alt="Пример пазлов плиток (стилизированных по дом)" width="200"></a>
-</div>
-</div>
-<div class="paragraph">
-<p>Круг <span class="underline">возможно</span> стоит преобразовать в 5-угольник (ассоциация знак качества СССР)</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<a class="image" href="images/otk.png"><img src="images/otk.png" alt="Пример пазлов плиток (стилизированных по дом)" width="200"></a>
-</div>
 </div>
 <div class="paragraph">
 <p>Гарантия, Без посредников, Соблюдаем сроки, Фиксированная стоимость. В центре лого компании с текстом "Доступное строительство". При клике пользователь перемещается на отдельную страницу преимуществ, где в красках описано решение болей клиента.</p>
@@ -2906,7 +2977,7 @@ https://www.vedomosti.ru/technology/articles/2020/01/12/820396-prodano-30-smartf
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-19 18:50:41 +0300
+Last updated 2021-03-21 05:20:40 +0300
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
